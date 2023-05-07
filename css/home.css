@@ -1,0 +1,118 @@
+    .Conteudo {
+        height: auto;
+        max-width: 100%;
+
+        padding: 1.5rem;
+    }
+
+    .Apresentacao {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+
+        line-height: 2.4rem;
+        padding: 1rem .5rem;
+    }
+
+
+    #robot-head {
+        max-width: calc(100% * .5);
+        width: 40rem;
+        height: auto;
+    }
+
+    .Sobre-mim {
+        background-color: var(--aqua-base);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .texto-sobre-mim {
+        max-width: 50%;
+        color: var(--black-alternative);
+    }
+
+    #human {
+        max-width: 40rem;
+        height: auto;
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 1));
+    }
+
+    .Formacoes {
+        text-align: center;
+    }
+
+    .Especialidades {
+        padding: .3rem 5rem;
+    }
+
+    .Especialidades ul {
+        margin: 2rem .2rem;
+        list-style: none;
+        display: flex;
+        gap: 4rem 10rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Especialidades li {
+        max-width: 28rem;
+        height: auto;
+        color: white;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--black-alternative);
+        transition: box-shadow .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    }
+
+    .Especialidades li:hover {
+        box-shadow: 0px 2px .8rem var(--aqua-base);
+    }
+
+    .Especialidades li h3 {
+        font-size: 1.7rem;
+    }
+
+    .Especialidades li p {
+        font-size: 1.3rem;
+        text-align: justify;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+
+    .Especialidades img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+        #robot-head {
+            max-width: 90%;
+            width: 90%;
+            height: auto;
+        }
+
+        .Sobre-mim {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .texto-sobre-mim {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .texto-sobre-mima p {
+            max-width: 100%;
+            text-align: center;
+        }
+
+    }
